@@ -20,76 +20,76 @@
 		<ClInclude Include="stdafx.h">
 			<Filter>Header Files</Filter>
 		</ClInclude>
-		<ClInclude Include="AddressMacros.h">
+		<ClInclude Include="../../Source/AddressMacros.h">
 			<Filter>Header Files\Addresses</Filter>
 		</ClInclude>
-		<ClInclude Include="Addresses.h">
+		<ClInclude Include="../../Source/Addresses.h">
 			<Filter>Header Files\Addresses</Filter>
 		</ClInclude>
-		<ClInclude Include="TocDefinition.h">
+		<ClInclude Include="../../Source/TocDefinition.h">
 			<Filter>Header Files\Addresses</Filter>
 		</ClInclude>
-		<ClInclude Include="igObject.hpp">
+		<ClInclude Include="../../Source/igObject.hpp">
 			<Filter>Header Files</Filter>
 		</ClInclude>
-		<ClInclude Include="__internalObjectBase.hpp">
+		<ClInclude Include="../../Source/__internalObjectBase.hpp">
 			<Filter>Header Files</Filter>
 		</ClInclude>
-		<ClInclude Include="igContainer.hpp">
+		<ClInclude Include="../../Source/igContainer.hpp">
 			<Filter>Header Files</Filter>
 		</ClInclude>
-		<ClInclude Include="igDataList.hpp">
+		<ClInclude Include="../../Source/igDataList.hpp">
 			<Filter>Header Files</Filter>
 		</ClInclude>
-		<ClInclude Include="igMemory.hpp">
+		<ClInclude Include="../../Source/igMemory.hpp">
 			<Filter>Header Files</Filter>
 		</ClInclude>
-		<ClInclude Include="igObjectList.hpp">
+		<ClInclude Include="../../Source/igObjectList.hpp">
 			<Filter>Header Files</Filter>
 		</ClInclude>
-		<ClInclude Include="igMetaObject.hpp">
+		<ClInclude Include="../../Source/igMetaObject.hpp">
 			<Filter>Header Files</Filter>
 		</ClInclude>
-		<ClInclude Include="igBaseMeta.hpp">
+		<ClInclude Include="../../Source/igBaseMeta.hpp">
 			<Filter>Header Files</Filter>
 		</ClInclude>
-		<ClInclude Include="igVector.hpp">
+		<ClInclude Include="../../Source/igVector.hpp">
 			<Filter>Header Files</Filter>
 		</ClInclude>
-		<ClInclude Include="igMetaField.hpp">
+		<ClInclude Include="../../Source/igMetaField.hpp">
 			<Filter>Header Files</Filter>
 		</ClInclude>
-		<ClInclude Include="igMetaEnum.hpp">
+		<ClInclude Include="../../Source/igMetaEnum.hpp">
 			<Filter>Header Files</Filter>
 		</ClInclude>
-		<ClInclude Include="MetadataDumper.hpp">
+		<ClInclude Include="../../Source/MetadataDumper.hpp">
 			<Filter>Header Files</Filter>
 		</ClInclude>
-		<ClInclude Include="Constants.h">
+		<ClInclude Include="../../Source/Constants.h">
 			<Filter>Header Files\Addresses</Filter>
 		</ClInclude>
-		<ClInclude Include="Games.h">
+		<ClInclude Include="../../Source/Games.h">
 			<Filter>Header Files\Addresses</Filter>
 		</ClInclude>
-		<ClInclude Include="igArkCore.hpp">
+		<ClInclude Include="../../Source/igArkCore.hpp">
 			<Filter>Header Files</Filter>
 		</ClInclude>
-		<ClInclude Include="igHashTable.hpp">
+		<ClInclude Include="../../Source/igHashTable.hpp">
 			<Filter>Header Files</Filter>
 		</ClInclude>
-		<ClInclude Include="cpp11hacks.hpp">
+		<ClInclude Include="../../Source/cpp11hacks.hpp">
 			<Filter>Header Files</Filter>
 		</ClInclude>
-		<ClInclude Include="fileio.hpp">
+		<ClInclude Include="../../Source/fileio.hpp">
 			<Filter>Header Files</Filter>
 		</ClInclude>
-		<ClInclude Include="cpp11hacks_static_assert.hpp">
+		<ClInclude Include="../../Source/cpp11hacks_static_assert.hpp">
 			<Filter>Header Files</Filter>
 		</ClInclude>
-		<ClInclude Include="Defines.h">
+		<ClInclude Include="../../Source/Defines.h">
 			<Filter>Header Files</Filter>
 		</ClInclude>
-		<ClInclude Include="igStringRef.hpp">
+		<ClInclude Include="../../Source/igStringRef.hpp">
 			<Filter>Header Files</Filter>
 		</ClInclude>
 	</ItemGroup>
@@ -100,22 +100,22 @@
 		<ClCompile Include="prx.cpp">
 			<Filter>Source Files</Filter>
 		</ClCompile>
-		<ClCompile Include="SuperChargers_1_6_0_Addresses.cpp">
+		<ClCompile Include="../../Source/SuperChargers_1_6_0_Addresses.cpp">
 			<Filter>Source Files\Addresses</Filter>
 		</ClCompile>
-		<ClCompile Include="asserts.cpp">
+		<ClCompile Include="../../Source/asserts.cpp">
 			<Filter>Source Files</Filter>
 		</ClCompile>
-		<ClCompile Include="MetadataDumper.cpp">
+		<ClCompile Include="../../Source/MetadataDumper.cpp">
 			<Filter>Source Files</Filter>
 		</ClCompile>
-		<ClCompile Include="fileio.cpp">
+		<ClCompile Include="../../Source/fileio.cpp">
 			<Filter>Source Files</Filter>
 		</ClCompile>
-		<ClCompile Include="igMetaField.cpp">
+		<ClCompile Include="../../Source/igMetaField.cpp">
 			<Filter>Source Files</Filter>
 		</ClCompile>
-		<ClCompile Include="Imaginators_1_1_0_Addresses.cpp">
+		<ClCompile Include="../../Source/Imaginators_1_1_0_Addresses.cpp">
 			<Filter>Source Files\Addresses</Filter>
 		</ClCompile>
 	</ItemGroup>

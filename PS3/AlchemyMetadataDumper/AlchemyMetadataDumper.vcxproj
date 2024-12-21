@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugImaginators1_1_0|PS3">
+      <Configuration>DebugImaginators1_1_0</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSuperchargers1_6_0|PS3">
+      <Configuration>DebugSuperchargers1_6_0</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|PS3">
+      <Configuration>Debug</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|PS3">
+      <Configuration>Release</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5C1B5A27-78F3-4576-886F-8CA985AE4F4C}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PS3'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>SNC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSuperchargers1_6_0|PS3'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>SNC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugImaginators1_1_0|PS3'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>SNC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|PS3'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>SNC</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|PS3'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSuperchargers1_6_0|PS3'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugImaginators1_1_0|PS3'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|PS3'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSuperchargers1_6_0|PS3'">
+    <TargetName>AlchemyMetadata_SSC_160</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugImaginators1_1_0|PS3'">
+    <TargetName>AlchemyMetadata_SI_110</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PS3'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;__CELL_ASSERT__;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSuperchargers1_6_0|PS3'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;__CELL_ASSERT__;TARGET_PS3=1;TARGET_GAME=GameCode(2015,  9, 20,  1,  6,  0);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libsn.a;libm.a;libio_stub.a;libfs_stub.a;libc.a</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugImaginators1_1_0|PS3'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;__CELL_ASSERT__;TARGET_PS3=1;TARGET_GAME=GameCode(2016, 10, 14,  1,  1,  0);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>../../Source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libsn.a;libm.a;libio_stub.a;libfs_stub.a;libc.a</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|PS3'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <OptimizationLevel>Level2</OptimizationLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="../../Source/Addresses.h" />
+    <ClInclude Include="../../Source/AddressMacros.h" />
+    <ClInclude Include="../../Source/Constants.h" />
+    <ClInclude Include="../../Source/cpp11hacks.hpp" />
+    <ClInclude Include="../../Source/cpp11hacks_static_assert.hpp" />
+    <ClInclude Include="../../Source/Defines.h" />
+    <ClInclude Include="../../Source/fileio.hpp" />
+    <ClInclude Include="../../Source/Games.h" />
+    <ClInclude Include="../../Source/igArkCore.hpp" />
+    <ClInclude Include="../../Source/igBaseMeta.hpp" />
+    <ClInclude Include="../../Source/igContainer.hpp" />
+    <ClInclude Include="../../Source/igDataList.hpp" />
+    <ClInclude Include="../../Source/igHashTable.hpp" />
+    <ClInclude Include="../../Source/igMemory.hpp" />
+    <ClInclude Include="../../Source/igMetaEnum.hpp" />
+    <ClInclude Include="../../Source/igMetaField.hpp" />
+    <ClInclude Include="../../Source/igMetaObject.hpp" />
+    <ClInclude Include="../../Source/igObject.hpp" />
+    <ClInclude Include="../../Source/igObjectList.hpp" />
+    <ClInclude Include="../../Source/igStringRef.hpp" />
+    <ClInclude Include="../../Source/igVector.hpp" />
+    <ClInclude Include="../../Source/MetadataDumper.hpp" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="../../Source/TocDefinition.h" />
+    <ClInclude Include="../../Source/__internalObjectBase.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="../../Source/asserts.cpp" />
+    <ClCompile Include="../../Source/fileio.cpp" />
+    <ClCompile Include="../../Source/igMetaField.cpp" />
+    <ClCompile Include="../../Source/Imaginators_1_1_0_Addresses.cpp" />
+    <ClCompile Include="../../Source/MetadataDumper.cpp" />
+    <ClCompile Include="prx.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|PS3'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugSuperchargers1_6_0|PS3'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugImaginators1_1_0|PS3'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|PS3'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../../Source/SuperChargers_1_6_0_Addresses.cpp" />
+  </ItemGroup>
+  <Import Condition="'$(ConfigurationType)' == 'Makefile' and Exists('$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets')" Project="$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
