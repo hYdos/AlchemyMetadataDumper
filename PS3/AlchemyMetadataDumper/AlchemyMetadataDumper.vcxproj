@@ -126,7 +126,7 @@
     <ClCompile Include="../../Source/asserts.cpp" />
     <ClCompile Include="../../Source/fileio.cpp" />
     <ClCompile Include="../../Source/igMetaField.cpp" />
-    <ClCompile Include="../../Source/Imaginators_1_1_0_Addresses.cpp" />
+    <ClCompile Include="Imaginators_1_1_0_Addresses.cpp" />
     <ClCompile Include="../../Source/MetadataDumper.cpp" />
     <ClCompile Include="prx.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -135,7 +135,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugImaginators1_1_0|PS3'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|PS3'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="../../Source/SuperChargers_1_6_0_Addresses.cpp" />
+    <ClCompile Include="SuperChargers_1_6_0_Addresses.cpp" />
   </ItemGroup>
   <Import Condition="'$(ConfigurationType)' == 'Makefile' and Exists('$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets')" Project="$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
