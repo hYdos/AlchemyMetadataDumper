@@ -1,6 +1,7 @@
 #pragma once
 
 #include "igMemory.hpp"
+#include <stddef.h>
 
 namespace Core
 {

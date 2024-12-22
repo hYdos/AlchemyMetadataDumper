@@ -9,7 +9,7 @@
 #include <coreinit/debug.h>
 #include <coreinit/memexpheap.h>
 #include <coreinit/dynload.h>
-#include <string.h>
+#include <string.h>g
 #include <whb/log.h>
 
 WUPS_PLUGIN_NAME("Alchemy Metadata Dumper");
@@ -17,6 +17,7 @@ WUPS_PLUGIN_DESCRIPTION("Dumps igMetaObject information in a format compatible w
 WUPS_PLUGIN_VERSION("v1.0");
 WUPS_PLUGIN_AUTHOR("Jasleen, hydos");
 WUPS_PLUGIN_LICENSE("GPLv3");
+
 constexpr uint32_t PRINT_META_OBJECTS = VPAD_BUTTON_PLUS;
 constexpr char* RPX_NAME = "nova-cafe-fin.rpx";
 

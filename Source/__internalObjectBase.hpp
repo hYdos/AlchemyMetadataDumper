@@ -5,12 +5,12 @@
 #include "cpp11hacks.hpp"
 
 #if TARGET_CAFE
-#error "Unimplemented!!"
+#define GetVirtualFunc(vtable, index) (((void**)vtable) + index)
 #else
 #define GetVirtualFunc(vtable, index) (((void**)vtable)[index])
 #endif // TARGET_CAFE
 
-#define CallVirtualFunc_0(index, ret) ((ret(*)(__internalObjectBase*))GetVirtualFunc(_vTable, index))(this)
+#define CallVirtualFunc_0(index, ret) ((ret(*)(__internalObjectBase*))GetVirtualFunc(this->_vTable, index))(this)
 #define CallVirtualFunc_0_c(index, ret) ((ret(*)(const __internalObjectBase*))GetVirtualFunc(_vTable, index))(this)
 #define CallVirtualFunc_1(index, ret, type0, value0) ((ret(*)(__internalObjectBase*, type0))GetVirtualFunc(_vTable, index))(this, value0)
 #define CallVirtualFunc_2(index, ret, type0, value0, type1, value1) ((ret(*)(__internalObjectBase*, type0, type1))GetVirtualFunc(_vTable, index))(this, value0, value1)

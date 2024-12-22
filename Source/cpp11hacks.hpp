@@ -14,6 +14,16 @@ inline void sleep(usecond_t time)
 }
 #endif // TARGET_PS3
 
+
+#if TARGET_CAFE
+#include <coreinit/time.h>
+#include <coreinit/thread.h>
+inline void sleep(uint32_t time)
+{
+      OSSleepTicks(OSMillisecondsToTicks(time));
+}
+#endif // TARGET_CAFE
+
 #if !defined(offsetof)
 #define offsetof(type, member) (reinterpret_cast<size_t>(&(reinterpret_cast<type*>(0)->member)))
 #endif // !defined(offsetof)

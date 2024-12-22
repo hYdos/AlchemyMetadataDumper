@@ -2,9 +2,12 @@
 
 #if TARGET_PS3
 #define FILE_PREFIX "/dev_hdd0/tmp/"
+#elif TARGET_CAFE
+#include <stdio.h>
+#define FILE_PREFIX "fs:/vol/external01/wiiu/"
 #else
 #error "unsupported platform"
-#endif // TARGET_PS3
+#endif
 
 // extra level of indirection to so the line number is used,
 // otherwise __LINE__ would be tokenized
@@ -38,4 +41,7 @@ public:
 
 private:
 	int _handle;
+	#if TARGET_CAFE
+	FILE* _stdHandle;
+	#endif
 };
